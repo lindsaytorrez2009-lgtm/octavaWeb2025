@@ -1,0 +1,57 @@
+/* ======== TABLA ======== */
+.tabla-container {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px #0002;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+}
+
+th {
+  background: #4b79a1;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+/* BADGES */
+.badge-admin { background: #b93030; color: white; padding: 4px 10px; border-radius: 6px; }
+.badge-usuario { background: #2e7d32; color: white; padding: 4px 10px; border-radius: 6px; }
+.badge-json { background: #0277bd; color: white; padding: 4px 10px; border-radius: 6px; }
+.badge-local { background: #6a1b9a; color: white; padding: 4px 10px; border-radius: 6px; }
+
+/* ======== MODAL ======== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #0008;
+  display: grid;
+  place-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  width: 480px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px #0003;
+  animation: pop .3s;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

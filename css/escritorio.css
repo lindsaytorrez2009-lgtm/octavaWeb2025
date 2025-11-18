@@ -1,0 +1,99 @@
+/* ======== GENERAL ======== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+}
+
+.escritorio-container {
+  min-height: 100vh;
+}
+
+/* ======== HEADER ======== */
+.header {
+  background: #4b79a1;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 10px #0003;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn-logout {
+  background: #d9534f;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-logout:hover {
+  background: #b52b2b;
+}
+
+/* ======== CONTENIDO PRINCIPAL ======== */
+.main-content {
+  padding: 40px;
+}
+
+.welcome-section {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #0002;
+}
+
+/* ======== TARJETAS ======== */
+.cards-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px #0002;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px #0003;
+}
+
+.card-icon {
+  font-size: 50px;
+}
+
+/* ======== INFO DE SESIÓN ======== */
+.session-info {
+  background: white;
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px #0002;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 20px;
+  gap: 15px;
+}
