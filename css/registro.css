@@ -1,33 +1,121 @@
+/* Fondo suave con gradiente */
 body {
-  background: linear-gradient(135deg, #8e9eab, #eef2f3);
+  background: linear-gradient(135deg, #6a85b6, #bac8e0);
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-}
-
-.container {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  align-items: center;
+  height: 100vh;
 }
 
+/* Contenedor centrado */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja del formulario */
 .registro-box {
-  width: 450px;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px #0003;
+  width: 420px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  animation: fadeIn 0.4s ease;
+  text-align: center;
 }
 
+/* Animación suave al aparecer */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Título */
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #3d4a5a;
+}
+
+/* Inputs */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1.5px solid #cfd6e0;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color .3s, box-shadow .3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #4b79a1;
+  box-shadow: 0 0 5px rgba(75,121,161,0.4);
+}
+
+small {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Botón registrar */
 button {
   background: #4b79a1;
   padding: 12px;
   width: 100%;
   color: white;
+  font-size: 16px;
+  font-weight: bold;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: .3s;
+  margin-top: 10px;
 }
+
 button:hover {
   background: #35516f;
 }
+
+/* Mensaje */
+.mensaje {
+  margin-top: 12px;
+  color: red;
+  font-weight: 600;
+}
+
+/* Link para volver */
+.login-link {
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: #35516f;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+
